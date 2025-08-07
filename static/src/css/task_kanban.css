@@ -1,0 +1,72 @@
+/* Estilo general de la tarjeta */
+.o_kanban_card.user_task_kanban {
+    border-radius: 12 px;
+    padding: 15 px;
+    margin: 5 px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #6c757d; /* default */
+    transition: all 0.3s ease;
+}
+
+/* iconos dentro del contenido */
+.user_task_kanban .fa {
+    margin-right: 6px;
+    color: #6c757d;
+}
+
+/* colores por prioridad */
+.priority_0{
+    border-left-color: #adb5bd; /* baja */
+}
+.priority_1{
+    border-left-color: #ffc107; /* media */
+}
+.priority_2{
+    border-left-color: #dc3545; /* alta */
+}
+
+/* footer del kanban */
+.user_task_kanban .oe_kanban_footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #444;
+}
+
+/* titulo mas destacado */
+.user_task_kanban strong {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Mostrar check si esta completada */
+.user_task_kanban .task-done {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #28a745;
+    font-size: 18px;
+}
+
+.task-sate-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3 px 7 px;
+    border-radius: 10 px;
+    color: white;
+    white-space: nowrap;
+}
+
+.state-draft{
+    background-color: #6c757d;
+}
+
+.state-in_progress{
+    background-color: #007bff;
+}
+
+.state-done{
+    background-color: #28a745;
+}
